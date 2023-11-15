@@ -1,0 +1,28 @@
+
+INSERT INTO Mentor (mentor_id, mentor_name, mentor_email) VALUES
+(1, 'sanjay', 'sanjayguvi@gmail.com');
+
+
+INSERT INTO Student (student_id, student_name, student_email) VALUES
+(1, 'shreedhana', 'shreedhanakathiravan@gmail.com'),
+(2, 'sivanishanth', 'sivathangeshbsc@gmail.com');
+
+
+INSERT INTO Course (course_id, course_name, course_description) VALUES
+(1, 'front end development', 'HTML, CSS, JAVASCRIPT'),
+(2, 'Web Development', 'Building web applications with modern technologies');
+
+
+INSERT INTO Batch (batch_number, start_date, end_date, course_id) VALUES
+(B51WD2, '2023-01-15', '2023-04-15', 1),
+(B51WD3, '2023-02-01', '2023-05-01', 2);
+
+
+INSERT INTO Enrollment (enrollment_id, student_id, batch_number, enrollment_date) VALUES
+(1, 1, B51WD2, '2023-01-10'),
+(2, 2, B51WD3, '2023-02-05');
+
+
+INSERT INTO RegistrationNumber (registration_id, student_id, registration_number) VALUES
+(1, 1, 'GZ2023001'),
+(2, 2, 'GZ2023002');
